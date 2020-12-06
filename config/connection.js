@@ -1,12 +1,17 @@
+// const express = require("express");
 const mysql = require("mysql");
 require("dotenv").config();
+// const app = express();
+// const PORT = process.env.PORT || 8080;
+
 
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: process.env.MYSQL_PASSWORD,
+    password: process.env.DB_PASSWORD,
     database: "burgers_db",
+    insecureAuth : true
 });
 
 connection.connect(function(err) {
