@@ -1,0 +1,16 @@
+.create-form, h1{
+    
+    text-align: center;
+  
+}
+body {
+    background-color: rgb(120, 224, 219);
+    
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+  }
+
