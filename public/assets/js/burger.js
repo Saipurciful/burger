@@ -1,46 +1,17 @@
-$(function(){
-    $(".crate-form").on("submit", function(event){
+$(function () {
+    $(".devoured-form").on("submit", function (event) {
         event.preventDefault();
 
-        var newBurger ={
-            burger_name: $("#newburger").val().trim(), devoured: 0
-        };
+        var burger_id = $(this).children(".burger_id").val();
 
-        $.ajax("/api/burgers", {
-            type: "POST",
-            data: newBurger
-        }).then(function(){
-            console.log("Added new burger");
+        $.ajax({
+            method: "PUT",
+            url: "/burgers/" + burger_id
+        }).then(function (data) {
+            console.log("Burger devoured");
             location.reload();
         });
     });
-    $(".eatburger").on("click", function(event){
-        event.preventDefault();
-        var devouredState = {
-            devoured: 1
-        }
-    });
-
-    $.ajax("/api/burgers/" +id, {
-        type:"PUT",
-        data: devouredState
-    }).then (function(){
-        console.log("Burger devoured");
-        location.reload();
-    });
 });
 
-$(".deleteburger").on("click", function(event){
-    event.preventDefault();
 
-    var id = $(this).data("id");
-    
-    // send the DELETE request.
-    $.ajax({
-        type: "DELETE",
-        url: "/api/burgers/" + id
-    
-}).then(location.reload());
-});
-
-    

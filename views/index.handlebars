@@ -8,8 +8,12 @@
 
   {{#each burgers_data}}
   {{#unless this.devoured}}
+
     <li> {{this.id}} {{this.burger_name}} 
-      <button type="button" class="btn btn-info">Devoured It!</button></li>
+      <form class="devoured-form"> <input type="hidden" class="burger_id" value={{this.id}}>
+      <button type="button" class="btn btn-info">Devoured It!</button></form>
+      </li>
+
       {{/unless}}
   {{/each}}
   </div>
