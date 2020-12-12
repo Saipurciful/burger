@@ -11,7 +11,7 @@ const connection = mysql.createConnection({
     user: "root",
     password: process.env.DB_PASSWORD,
     database: "burgers_db",
-    insecureAuth : true
+   
 });
 
 connection.connect(function(err) {

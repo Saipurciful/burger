@@ -1,50 +1,46 @@
 
 
 <div class="container">
-<div class="row">
-  <div class="col-md-6">
-    <h2>Eat da Burger!</h2>
+  <div class="row">
+    <div class="col-md-6">
 
+    <h3>Waiting to be Devoured</h3><br>
 
-  {{#each burgers_data}}
-  {{#unless this.devoured}}
-
-    <li> {{this.id}} {{this.burger_name}} 
-      <form class="devoured-form"> <input type="hidden" class="burger_id" value={{this.id}}>
-      <button type="button" class="btn btn-info">Devoured It!</button></form>
-      </li>
-
-      {{/unless}}
+  {{#each burgers}}
+  {{#unless devoured}}
+     {{this.id}}. {{ this.burger_name}} 
+      
+       <button type="button" class="devoured btn btn-primary"  data-id="{{this.id}}" data-newDevoured="{{devour}}">Devour It!</button>
+      <br><br>
+  {{/unless}}
   {{/each}}
+
+</div>
+ 
+
+<div class="col-md-6">
+ <h3>Devoured Burgers</h3> <br>  
+
+  {{#each burgers}}
+  {{#if devoured}}
+ 
+    {{this.id}}. {{ this.burger_name}} <br>
+
+  {{/if}}
+  {{/each}}
+
+    </div>
   </div>
+</div><br><br>
 
 
+<form class="create-form">
+  <div class="form-group">
 
-  <div class="col-md-6">
-    
-  
-<h2>Devoured It!</h2>
-<li>
-  {{#each burgers_data}}
-  {{#if this.devoured}}
- 
-    
-     {{this.id}} {{ this.burger_name}}
-     {{/if}}
-    
-  {{/each}}
-</li>
-</div>
-</div>
-</div>
- 
-<div class="form-group">
-
-<form class="create-form" action="/burgers/create" method="POST">
-    <label for="bu"></label>
-    <input type="text" id="bu" name="burger_name" value="">
+    <label for="addburger" ></label>
+    <input type="text" id="addburger" name="burger" value=""><br>
     <p>Enter the burger you would like to eat</p> 
  
-  <button type="submit">Submit</button>
+  <button type="submit" id="addNewBurger">Submit</button>
+   </div>
 </form>
- </div>
