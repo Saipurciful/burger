@@ -1,8 +1,6 @@
-// const express = require("express");
+// Set up MySQL connection
 const mysql = require("mysql");
 require("dotenv").config();
-// const app = express();
-// const PORT = process.env.PORT || 8080;
 
 
 const connection = mysql.createConnection({
@@ -14,6 +12,7 @@ const connection = mysql.createConnection({
    
 });
 
+// Make connection.
 connection.connect(function(err) {
     if (err) {
       console.error("error connecting: " + err.stack);
@@ -22,5 +21,6 @@ connection.connect(function(err) {
     console.log("connected as id " + connection.threadId);
   });
   
+  // Export connection for ORM to use
   module.exports = connection;
   
