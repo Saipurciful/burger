@@ -21,7 +21,7 @@
 
 
 ## Usage Information
-* Eat-Da-Burger! is a restaurant app that lets users input the names of burgers they would like to eat. 
+* Eat-Da-Burger! is a restaurant app that lets users input a name of burgers they would like to eat. 
 
 <img src="public/assets/css/img/2.png" style="width: 350px;"><br>
 
@@ -29,7 +29,7 @@
 
 <img src="public/assets/css/img/submitted.png" style="width: 350px;"><br>
 
-* Each burger in the waiting area also has a "Devour it!" button. When the user clicks it, the burger will move to the right side of the pag.
+* Each burger in the waiting area also has a "Devour it!" button. When the user clicks it, the burger will move to the right side of the page.
 
 <img src="public/assets/css/img/devoured.png" style="width: 350px;"><br>
 
