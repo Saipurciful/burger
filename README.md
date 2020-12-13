@@ -9,7 +9,6 @@
 * [Usage Information](#Usage-Information)
 * [License](#License)
 * [Contributing Guildline](#Contributing-Guildline)
-* [Questions](#Questions)
 
 
 
@@ -44,25 +43,9 @@
 ## Contributing Guildeline
 * I encourage public contributions.
 
-
-
-## Demonstration Video (coming soon)
-
-![](https://media.giphy.com/media/HkRm0ZmUiV5TcW6s8c) <br>
-
-
-
-
 ### Link to Demonstration on YouTube: 
 * https://www.youtube.com/watch?v=GxLNYTCOOY8&feature=youtu.be <br> 
 
-
-
-## Questions
-
-  * Github user name :   saipurciful
-  * Github link : https://github.com/Saipurciful
-  * How to reach me with additional questions : https://github.com/Saipurciful
 
 ## Link to the project site. 
 * https://evening-wildwood-75697.herokuapp.com/
