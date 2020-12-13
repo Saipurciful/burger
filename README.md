@@ -35,7 +35,7 @@
 
 * The app is also responsiveness.
 
-<img src="public/assets/css/img/responsive.png" style="width: 350px;"><br>
+<img src="public/assets/css/img/responsive.png" style="width: 150px;"><br>
 
 ## License
 [![License](https://img.shields.io/badge/License-MIT%201.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
